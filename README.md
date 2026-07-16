@@ -1,21 +1,23 @@
-# Bangladesh Garment Industry Analysis
+# Bangladesh Garments Industry Data Analysis
 
 ## Project Overview
-This project involves the cleaning, analysis, and exploration of factory data from the Bangladesh Garment Manufacturers and Exporters Association (BGMEA). The goal was to transform raw, inconsistent data into actionable insights for the textile industry.
+This project provides an end-to-end data analysis of the Bangladesh garments sector. It involves cleaning raw data and filtering anomalies using SQL, followed by aggregating and building a comprehensive visual dashboard in Excel to track factory capacities, resource distribution, and regional densities.
 
-## Data Quality & Governance
-Real-world data is rarely perfect. This project highlights my ability to identify and manage data integrity issues, including:
-* **Clerical Errors:** Identified "copy-paste" errors where management employee numbers were incorrectly entered.
-* **Inconsistent Naming:** Standardized city and town names using SQL `CASE` statements to ensure accurate grouping.
-* **Data Governance:** Implemented a custom `factory_status` column to flag records with zero values or impossible ratios as "Anomalies" without deleting the original data.
+## Dashboard Preview
+Below is the final reporting dashboard generated from the polished dataset:
 
-## Key Technologies
-* **SQL:** Data cleaning, anomaly detection, and aggregation.
-* **Excel:** Visualization and trend exploration.
+![Factory Dashboard](dashboard_preview.png)
 
-## Key Findings
-* Discovered significant inconsistencies in self-reported production capacity versus operational assets (machines/employees).
-* Successfully grouped localized factory data into regional hubs to visualize production distribution.
+## Core Insights
+* **Regional Dominance:** Dhaka and Gazipur lead the sector with the highest overall yearly production capacities.
+* **Resource Allocation:** Woven and Knit factory types handle the highest volume of management employees and active machinery.
+* **Data Integrity:** Handled data anomalies (such as separating out profiles with zeroed production capacities) via SQL prep before visualization.
 
----
-*Note: This project serves as a showcase of data cleaning and exploratory data analysis (EDA) fundamentals.*
+## Tools & Skills Used
+* **SQL:** Data exploration, handling missing values, and query aggregations.
+* **MS Excel / Google Sheets:** Pivot Tables, data modeling, custom sorting, and dashboard UI design.
+
+## Repository Files
+* `your_sql_queries.sql` - The backend SQL scripts used for data extraction and preparation.
+* `garments_tab.xlsx` - The workbook containing the underlying Pivot Tables and data models.
+* `garments_tab_chart_2.pdf` - A clean, presentation-ready PDF export of the visual dashboard.
